@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>सूर्योदय सोलर सोल्युशन | Suryoday Solar Solution — Shevgaon</title>
+<meta name="description" content="सूर्योदय सोलर सोल्युशन — MahaVitran अधिकृत सोलर विक्रेता, शेवगाव. On-grid सोलर बसवा, वीज बिलात ८०-१००% बचत करा. Authorized Servotec dealer, subsidy up to ₹78,000.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Noto+Sans+Devanagari:wght@500;600;700&family=Inter:wght@400;500;600&family=Noto+Sans+Devanagari:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --sky:#152238;
+    --sunrise-1:#e75a2b;
+    --sunrise-2:#f4922e;
+    --sunrise-3:#ffc857;
+    --cream:#fff8ec;
+    --panel:#fffdf8;
+    --ink:#241a10;
+    --ink-soft:#7a6a56;
+    --line:#f0dcb8;
+    --leaf:#2f7a52;
+    --leaf-soft:#e7f2ea;
+    --maxw:1180px;
+    --font-head:'Poppins','Noto Sans Devanagari',sans-serif;
+    --font-body:'Inter','Noto Sans Devanagari',sans-serif;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0; background:var(--cream); color:var(--ink);
+    font-family:var(--font-body); line-height:1.6; -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{font-family:var(--font-head); margin:0; font-weight:600;}
+  p{margin:0;}
+  a{color:inherit; text-decoration:none;}
+  img,svg{display:block; max-width:100%;}
+  section{padding:88px 24px;}
+  .wrap{max-width:var(--maxw); margin:0 auto;}
+  ::selection{background:var(--sunrise-3); color:var(--ink);}
+  :focus-visible{outline:2px solid var(--sunrise-1); outline-offset:3px;}
+
+  /* ---------- Header ---------- */
+  header{
+    position:sticky; top:0; z-index:60;
+    background:rgba(255,248,236,0.94); backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{max-width:var(--maxw); margin:0 auto; display:flex; align-items:center; justify-content:space-between; padding:14px 24px;}
+  .brand{display:flex; align-items:center; gap:10px;}
+  .brand-text{display:flex; flex-direction:column; line-height:1.2;}
+  .brand-mr{font-family:var(--font-head); font-size:19px; font-weight:700; color:var(--ink);}
+  .brand-en{font-size:11.5px; letter-spacing:.03em; color:var(--ink-soft);}
+  .nav-links{display:flex; align-items:center; gap:30px;}
+  .nav-links a{font-size:14.5px; color:var(--ink-soft); transition:color .15s ease;}
+  .nav-links a:hover{color:var(--ink);}
+  .nav-cta{
+    background:var(--sunrise-1); color:#fff; font-weight:600; font-size:14.5px;
+    padding:11px 20px; border-radius:6px; transition:background .15s ease; display:flex; align-items:center; gap:8px;
+  }
+  .nav-cta:hover{background:#cf4a20;}
+  .menu-btn{display:none; background:none; border:none; color:var(--ink); cursor:pointer; padding:6px;}
+
+  /* ---------- Hero ---------- */
+  .hero{
+    padding:64px 24px 40px; display:grid; grid-template-columns:1.05fr 0.95fr; gap:50px; align-items:center;
+    max-width:var(--maxw); margin:0 auto;
+  }
+  .eyebrow{
+    display:inline-flex; align-items:center; gap:8px; font-size:13.5px; color:var(--sunrise-1); font-weight:600;
+    background:#fdece1; padding:7px 14px; border-radius:999px; margin-bottom:20px;
+  }
+  .hero h1{font-size:clamp(30px,4vw,46px); line-height:1.18; color:var(--ink); max-width:15ch;}
+  .hero .hero-en{margin-top:10px; font-family:var(--font-head); font-size:clamp(16px,1.6vw,19px); color:var(--sunrise-1); font-weight:600;}
+  .hero p.sub{margin-top:20px; font-size:16.5px; color:var(--ink-soft); max-width:46ch;}
+  .hero-actions{display:flex; gap:14px; margin-top:30px; flex-wrap:wrap;}
+  .btn-primary{
+    background:var(--sunrise-1); color:#fff; font-weight:600; font-size:15px;
+    padding:14px 24px; border-radius:8px; transition:background .15s ease, transform .1s ease; border:none; cursor:pointer;
+    font-family:var(--font-body); display:inline-flex; align-items:center; gap:9px;
+  }
+  .btn-primary:hover{background:#cf4a20;}
+  .btn-primary:active{transform:scale(0.98);}
+  .btn-secondary{
+    border:1.5px solid var(--line); color:var(--ink); font-weight:600; font-size:15px;
+    padding:14px 24px; border-radius:8px; transition:border-color .15s ease, background .15s ease;
+    background:#fff; display:inline-flex; align-items:center; gap:9px;
+  }
+  .btn-secondary:hover{border-color:var(--sunrise-2); background:#fffaf1;}
+  .hero-trust{margin-top:26px; display:flex; gap:22px; flex-wrap:wrap;}
+  .hero-trust span{font-size:13px; color:var(--ink-soft); display:flex; align-items:center; gap:6px;}
+  .hero-trust svg{width:15px; height:15px; color:var(--leaf); flex-shrink:0;}
+
+  .hero-art{position:relative;}
+
+  /* ---------- Trust strip ---------- */
+  .trust-strip{border-top:1px solid var(--line); border-bottom:1px solid var(--line); background:var(--panel);}
+  .trust-strip .wrap{display:grid; grid-template-columns:repeat(4,1fr); gap:0;}
+  .trust-item{padding:26px 20px; border-left:1px solid var(--line); text-align:center;}
+  .trust-item:first-child{border-left:none;}
+  .trust-item .t-title{font-family:var(--font-head); font-weight:600; font-size:14.5px; color:var(--ink);}
+  .trust-item .t-sub{font-size:12.5px; color:var(--ink-soft); margin-top:4px;}
+
+  /* ---------- Section heading ---------- */
+  .section-head{max-width:60ch; margin-bottom:48px;}
+  .section-head .eyebrow{margin-bottom:14px;}
+  .section-head h2{font-size:clamp(24px,3vw,32px); color:var(--ink);}
+  .section-head .h2-en{margin-top:6px; font-size:15px; color:var(--ink-soft); font-weight:500;}
+  .section-head p{margin-top:14px; color:var(--ink-soft); font-size:15.5px; max-width:56ch;}
+
+  /* ---------- Subsidy ---------- */
+  .subsidy-section{background:var(--sky); color:#fff;}
+  .subsidy-section .eyebrow{background:rgba(244,146,46,0.18); color:var(--sunrise-3);}
+  .subsidy-section .section-head h2{color:#fff;}
+  .subsidy-section .section-head .h2-en{color:#c7d1e0;}
+  .subsidy-section .section-head p{color:#aab4c8;}
+  .subsidy-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:18px;}
+  .subsidy-card{
+    background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.14); border-radius:12px;
+    padding:30px 24px; text-align:center;
+  }
+  .subsidy-card .kw{font-family:var(--font-head); font-size:15px; color:var(--sunrise-3); font-weight:600; letter-spacing:.02em;}
+  .subsidy-card .amt{font-family:var(--font-head); font-size:34px; font-weight:700; color:#fff; margin-top:12px;}
+  .subsidy-card .amt-label{font-size:12.5px; color:#9fabc0; margin-top:6px;}
+  .subsidy-note{margin-top:28px; font-size:14px; color:#aab4c8; display:flex; gap:10px; align-items:flex-start; max-width:70ch;}
+  .subsidy-note svg{width:18px; height:18px; flex-shrink:0; margin-top:2px; color:var(--sunrise-3);}
+
+  /* ---------- Benefits grid ---------- */
+  .benefits-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line); border:1px solid var(--line); border-radius:14px; overflow:hidden;}
+  .benefit{background:var(--panel); padding:32px 28px;}
+  .benefit svg{width:26px; height:26px; color:var(--sunrise-1); margin-bottom:18px;}
+  .benefit h3{font-size:16.5px; color:var(--ink); font-weight:600;}
+  .benefit .b-en{font-size:12.5px; color:var(--ink-soft); margin-top:4px; font-weight:500;}
+
+  /* ---------- Dealer perks ---------- */
+  .perks-wrap{display:grid; grid-template-columns:0.9fr 1.1fr; gap:56px; align-items:start;}
+  .perks-list{display:flex; flex-direction:column; gap:0;}
+  .perk-item{display:flex; gap:16px; padding:18px 0; border-top:1px solid var(--line);}
+  .perk-item:last-child{border-bottom:1px solid var(--line);}
+  .perk-item svg{width:20px; height:20px; color:var(--leaf); flex-shrink:0; margin-top:2px;}
+  .perk-item .p-title{font-weight:600; font-size:15.5px; color:var(--ink);}
+  .perk-item .p-sub{font-size:13.5px; color:var(--ink-soft); margin-top:3px;}
+
+  .brand-panel{background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:32px;}
+  .brand-panel .bp-head{display:flex; align-items:center; gap:14px; margin-bottom:20px;}
+  .bp-logo{
+    font-family:var(--font-head); font-weight:700; font-size:20px; color:var(--sky);
+    background:var(--sunrise-3); padding:8px 14px; border-radius:8px; letter-spacing:.01em;
+  }
+  .bp-tag{font-size:12.5px; color:var(--ink-soft);}
+  .chip-row{display:flex; flex-wrap:wrap; gap:10px; margin-top:22px;}
+  .chip{
+    border:1px solid var(--line); border-radius:999px; padding:8px 16px; font-size:13.5px;
+    font-weight:600; color:var(--ink); background:#fff;
+  }
+
+  /* ---------- Sample project ---------- */
+  .sample-section{background:var(--leaf-soft);}
+  .sample-grid{display:grid; grid-template-columns:1fr 1fr; gap:40px;}
+  .sample-card{background:#fff; border:1px solid var(--line); border-radius:14px; padding:28px;}
+  .sample-card h3{font-size:15.5px; color:var(--ink); margin-bottom:18px;}
+  .sample-row{display:flex; justify-content:space-between; align-items:baseline; padding:11px 0; border-top:1px solid var(--line); font-size:14.5px;}
+  .sample-row:first-of-type{border-top:none;}
+  .sample-row .label{color:var(--ink-soft);}
+  .sample-row .val{font-weight:600; color:var(--ink); font-family:var(--font-head);}
+  .sample-highlight{
+    margin-top:20px; background:var(--leaf); color:#fff; border-radius:10px; padding:20px; text-align:center;
+  }
+  .sample-highlight .num{font-family:var(--font-head); font-size:30px; font-weight:700;}
+  .sample-highlight .lbl{font-size:13px; margin-top:4px; opacity:.9;}
+
+  .gen-bars{display:flex; flex-direction:column; gap:8px;}
+  .gen-row{display:grid; grid-template-columns:38px 1fr 60px; gap:10px; align-items:center; font-size:12.5px;}
+  .gen-row .m{color:var(--ink-soft); font-weight:600;}
+  .gen-track{background:#eef2ea; border-radius:4px; overflow:hidden; height:14px;}
+  .gen-fill{background:linear-gradient(90deg,var(--sunrise-2),var(--sunrise-3)); height:100%; border-radius:4px;}
+  .gen-row .v{color:var(--ink-soft); text-align:right;}
+  .env-row{display:flex; gap:16px; margin-top:20px;}
+  .env-card{flex:1; background:#fff; border:1px solid var(--line); border-radius:10px; padding:16px; text-align:center;}
+  .env-card .num{font-family:var(--font-head); font-weight:700; font-size:20px; color:var(--leaf);}
+  .env-card .lbl{font-size:12px; color:var(--ink-soft); margin-top:4px;}
+
+  /* ---------- Process ---------- */
+  .process{display:grid; grid-template-columns:repeat(5,1fr); gap:0; position:relative;}
+  .process::before{content:''; position:absolute; top:19px; left:0; right:0; height:1px; background:var(--line);}
+  .step{padding:0 16px 0 0; position:relative;}
+  .step .n{
+    width:38px; height:38px; border-radius:50%; background:var(--panel); border:1.5px solid var(--sunrise-2);
+    color:var(--sunrise-1); font-family:var(--font-head); font-size:15px; font-weight:700;
+    display:flex; align-items:center; justify-content:center; position:relative; z-index:1; margin-bottom:20px;
+  }
+  .step h3{font-size:15.5px; color:var(--ink); font-weight:600;}
+  .step .s-en{font-size:12px; color:var(--sunrise-1); font-weight:600; margin-top:4px;}
+  .step p{margin-top:8px; font-size:13.5px; color:var(--ink-soft);}
+
+  /* ---------- Team / Contact ---------- */
+  .contact-section{background:var(--sky); color:#fff;}
+  .contact-grid{display:grid; grid-template-columns:1fr 1fr; gap:56px;}
+  .contact-section .eyebrow{background:rgba(244,146,46,0.18); color:var(--sunrise-3);}
+  .contact-section .section-head h2{color:#fff;}
+  .contact-section .section-head .h2-en{color:#c7d1e0;}
+  .contact-section .section-head p{color:#aab4c8;}
+
+  .team-list{display:flex; flex-direction:column; gap:0;}
+  .team-item{display:flex; justify-content:space-between; align-items:center; padding:18px 0; border-top:1px solid rgba(255,255,255,0.12);}
+  .team-item:last-child{border-bottom:1px solid rgba(255,255,255,0.12);}
+  .team-name{font-weight:600; font-size:15.5px;}
+  .team-role{font-size:12.5px; color:#9fabc0; margin-top:2px;}
+  .team-phone{color:var(--sunrise-3); font-weight:600; font-size:14.5px; display:flex; align-items:center; gap:6px;}
+
+  .addr-card{background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.14); border-radius:14px; padding:26px; margin-top:28px;}
+  .addr-card .a-title{font-weight:600; font-size:14.5px; display:flex; align-items:center; gap:8px;}
+  .addr-card .a-title svg{width:17px; height:17px; color:var(--sunrise-3);}
+  .addr-card p{margin-top:10px; font-size:14px; color:#c7d1e0; line-height:1.7;}
+
+  .cta-box{background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.14); border-radius:14px; padding:34px;}
+  .cta-box h3{font-size:18px; color:#fff;}
+  .cta-box p{margin-top:10px; font-size:14.5px; color:#aab4c8;}
+  .cta-box .hours{margin-top:20px; display:flex; justify-content:space-between; font-size:13.5px; color:#c7d1e0; border-top:1px solid rgba(255,255,255,0.12); padding-top:16px;}
+  .cta-box .hero-actions{margin-top:24px;}
+  .cta-box .btn-secondary{background:transparent; border-color:rgba(255,255,255,0.25); color:#fff;}
+  .cta-box .btn-secondary:hover{background:rgba(255,255,255,0.08); border-color:rgba(255,255,255,0.4);}
+
+  /* ---------- Footer ---------- */
+  footer{background:#0f1826; color:#c7d1e0; padding:56px 24px 28px;}
+  .footer-top{display:grid; grid-template-columns:1.4fr 1fr 1fr; gap:40px; padding-bottom:36px; border-bottom:1px solid rgba(255,255,255,0.1);}
+  .footer-brand .brand-mr{color:#fff;}
+  .footer-brand .brand-en{color:#8b96ab;}
+  .footer-brand p{margin-top:14px; font-size:13.5px; color:#8b96ab; max-width:34ch;}
+  .footer-col h4{font-size:13px; color:#fff; font-weight:600; margin-bottom:14px;}
+  .footer-col a, .footer-col span{display:block; font-size:13.5px; color:#8b96ab; margin-bottom:10px;}
+  .footer-col a:hover{color:#fff;}
+  .footer-bottom{display:flex; justify-content:space-between; padding-top:22px; font-size:12.5px; color:#6b7690; flex-wrap:wrap; gap:10px;}
+
+  /* ---------- Floating WhatsApp ---------- */
+  .wa-float{
+    position:fixed; bottom:22px; right:22px; z-index:70; background:#25d366; width:56px; height:56px;
+    border-radius:50%; display:flex; align-items:center; justify-content:center; box-shadow:0 6px 18px rgba(0,0,0,0.25);
+    transition:transform .15s ease;
+  }
+  .wa-float:hover{transform:scale(1.06);}
+  .wa-float svg{width:28px; height:28px; color:#fff;}
+
+  @media (max-width:920px){
+    .hero{grid-template-columns:1fr; padding-top:36px;}
+    .hero-art{order:-1;}
+    .trust-strip .wrap{grid-template-columns:repeat(2,1fr);}
+    .trust-item:nth-child(3){border-left:none;}
+    .subsidy-grid{grid-template-columns:1fr;}
+    .benefits-grid{grid-template-columns:1fr;}
+    .perks-wrap{grid-template-columns:1fr;}
+    .sample-grid{grid-template-columns:1fr;}
+    .process{grid-template-columns:1fr; gap:28px;}
+    .process::before{display:none;}
+    .contact-grid{grid-template-columns:1fr;}
+    .footer-top{grid-template-columns:1fr; gap:28px;}
+    .nav-links{
+      position:fixed; top:64px; left:0; right:0; background:var(--cream); flex-direction:column;
+      padding:20px 24px; border-bottom:1px solid var(--line); gap:18px; display:none;
+    }
+    .nav-links.open{display:flex;}
+    .menu-btn{display:block;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a href="#top" class="brand">
+      <svg width="34" height="34" viewBox="0 0 34 34" fill="none" aria-hidden="true">
+        <circle cx="17" cy="17" r="7" fill="#f4922e"/>
+        <g stroke="#e75a2b" stroke-width="2" stroke-linecap="round">
+          <path d="M17 2v5M17 27v5M32 17h-5M7 17H2M27.7 6.3l-3.5 3.5M9.8 24.2l-3.5 3.5M27.7 27.7l-3.5-3.5M9.8 9.8L6.3 6.3"/>
+        </g>
+      </svg>
+      <span class="brand-text">
+        <span class="brand-mr">सूर्योदय सोलर सोल्युशन</span>
+        <span class="brand-en">Suryoday Solar Solution</span>
+      </span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#benefits">फायदे</a>
+      <a href="#subsidy">सबसिडी</a>
+      <a href="#products">उत्पादने</a>
+      <a href="#process">प्रक्रिया</a>
+      <a href="#contact">संपर्क</a>
+    </nav>
+    <a href="tel:+919370120717" class="nav-cta">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1L6.6 10.8z" fill="currentColor"/></svg>
+      कॉल करा
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="मेनू उघडा" aria-expanded="false">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</header>
+
+<div id="top"></div>
+
+<section class="hero" style="padding-top:64px;">
+  <div>
+    <span class="eyebrow">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      MahaVitran अधिकृत विक्रेता
+    </span>
+    <h1>आता आपल्या घरावर सोलर बसवा, वीज बिलात मोठी बचत करा</h1>
+    <p class="hero-en">Solar for your roof. Freedom from rising power bills.</p>
+    <p class="sub">शेवगावमधील अधिकृत Servotec डीलर — घरगुती व व्यावसायिक On-Grid सोलर सिस्टीम बसवून वीज बिलात ८०–१००% पर्यंत बचत करा. सरकारी सबसिडी, नेट मीटरिंग व २५ वर्षांची पॅनल वॉरंटी.</p>
+    <div class="hero-actions">
+      <a href="https://wa.me/919370120717?text=Namaskar%2C%20mala%20solar%20system%20sathi%20mofat%20quotation%20have%20aahe." class="btn-primary">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.4c1.4.8 3.1 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z" fill="currentColor"/></svg>
+        मोफत कोटेशन मागवा
+      </a>
+      <a href="#subsidy" class="btn-secondary">सबसिडी बघा</a>
+    </div>
+    <div class="hero-trust">
+      <span><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg>MSME नोंदणीकृत</span>
+      <span><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg>PM सूर्य घर योजना भागीदार</span>
+      <span><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg>२५+ वर्ष पॅनल वॉरंटी</span>
+    </div>
+  </div>
+  <div class="hero-art">
+    <svg viewBox="0 0 600 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="सोलर पॅनल बसवलेले घर आणि सूर्योदय">
+      <defs>
+        <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#ffe3b0"/>
+          <stop offset="55%" stop-color="#ffc78a"/>
+          <stop offset="100%" stop-color="#fff8ec"/>
+        </linearGradient>
+        <linearGradient id="sunGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#ffd166"/>
+          <stop offset="100%" stop-color="#e75a2b"/>
+        </linearGradient>
+        <linearGradient id="panelGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#1c2c46"/>
+          <stop offset="100%" stop-color="#0f1826"/>
+        </linearGradient>
+      </defs>
+      <rect x="0" y="0" width="600" height="380" fill="url(#skyGrad)"/>
+      <circle cx="300" cy="230" r="72" fill="url(#sunGrad)"/>
+      <g stroke="#f4922e" stroke-width="4" stroke-linecap="round" opacity="0.65">
+        <line x1="300" y1="120" x2="300" y2="90"/>
+        <line x1="392" y1="230" x2="422" y2="230"/>
+        <line x1="365" y1="157" x2="386" y2="136"/>
+        <line x1="235" y1="157" x2="214" y2="136"/>
+      </g>
+      <rect x="0" y="330" width="600" height="150" fill="#f4d9a0"/>
+      <path d="M60 340l30-14 30 14v40H60z" fill="#e2c088"/>
+      <path d="M500 350l24-11 24 11v30h-48z" fill="#e2c088"/>
+      <rect x="150" y="240" width="300" height="140" fill="#fffdf8" stroke="#d8c39a" stroke-width="2"/>
+      <path d="M135 240L300 155l165 85z" fill="#7a2e17"/>
+      <g>
+        <rect x="205" y="170" width="190" height="62" fill="url(#panelGrad)" stroke="#0a1420" stroke-width="2" transform="skewX(-0.001)"/>
+        <g stroke="#3a4a68" stroke-width="1.4">
+          <line x1="237" y1="170" x2="237" y2="232"/>
+          <line x1="269" y1="170" x2="269" y2="232"/>
+          <line x1="301" y1="170" x2="301" y2="232"/>
+          <line x1="333" y1="170" x2="333" y2="232"/>
+          <line x1="365" y1="170" x2="365" y2="232"/>
+          <line x1="205" y1="201" x2="395" y2="201"/>
+        </g>
+      </g>
+      <rect x="190" y="300" width="60" height="80" fill="#c96a3a"/>
+      <rect x="270" y="270" width="46" height="46" fill="#dce8f2" stroke="#b9cbdc" stroke-width="2"/>
+      <rect x="350" y="270" width="46" height="46" fill="#dce8f2" stroke="#b9cbdc" stroke-width="2"/>
+      <rect x="140" y="470" width="320" height="10" fill="#dcbf88"/>
+      <g transform="translate(455,290)">
+        <rect x="0" y="0" width="22" height="60" rx="2" fill="#e9edf2" stroke="#c3ccd8" stroke-width="1.5"/>
+        <rect x="4" y="8" width="14" height="18" fill="#152238"/>
+      </g>
+    </svg>
+  </div>
+</section>
+
+<div class="trust-strip">
+  <div class="wrap">
+    <div class="trust-item"><div class="t-title">८०–१००%</div><div class="t-sub">वीज बिल बचत / Bill savings</div></div>
+    <div class="trust-item"><div class="t-title">२५ वर्षे</div><div class="t-sub">पॅनल वॉरंटी / Panel warranty</div></div>
+    <div class="trust-item"><div class="t-title">३–४ वर्षे</div><div class="t-sub">गुंतवणूक परतावा / Payback</div></div>
+    <div class="trust-item"><div class="t-title">१००%</div><div class="t-sub">लोन सुविधा / Loan facility</div></div>
+  </div>
+</div>
+
+<section id="benefits">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">सोलरचे फायदे</span>
+      <h2>वीज बिलापासून कायमची सुटका</h2>
+      <p class="h2-en">Why homes and shops in Shevgaon are switching to solar</p>
+    </div>
+    <div class="benefits-grid">
+      <div class="benefit">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M13 2L4 14h6l-1 8 9-12h-6l1-8z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        <h3>वीज बिलात ८०–१००% बचत</h3>
+        <div class="b-en">Cut your monthly bill dramatically</div>
+      </div>
+      <div class="benefit">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 2l7 4v6c0 5-3 8-7 10-4-2-7-5-7-10V6l7-4z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        <h3>पर्यावरणपूरक ऊर्जा</h3>
+        <div class="b-en">Clean, renewable power for your home</div>
+      </div>
+      <div class="benefit">
+        <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="14" rx="1.5" stroke="currentColor" stroke-width="1.6"/><path d="M8 21h8M12 18v3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <h3>सरकार मान्यताप्राप्त पार्ट्स</h3>
+        <div class="b-en">Government-approved, premium components</div>
+      </div>
+      <div class="benefit">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 3v3M12 18v3M4.2 12H2M22 12h-2.2M18.4 5.6l-1.6 1.6M7.2 16.8l-1.6 1.6M18.4 18.4l-1.6-1.6M7.2 7.2L5.6 5.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.6"/></svg>
+        <h3>कमी देखभाल खर्च</h3>
+        <div class="b-en">Low maintenance, low running cost</div>
+      </div>
+      <div class="benefit">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M3 12h4l3-8 4 16 3-8h4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3>वीज दरवाढीपासून मुक्तता</h3>
+        <div class="b-en">Stay protected from future tariff hikes</div>
+      </div>
+      <div class="benefit">
+        <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <h3>दीर्घकाळ टिकणारे तंत्रज्ञान</h3>
+        <div class="b-en">Durable technology built to last decades</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="subsidy" class="subsidy-section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">PM सूर्य घर मुफ्त बिजली योजना</span>
+      <h2>सबसिडी थेट तुमच्या खात्यात</h2>
+      <p class="h2-en">Government subsidy on rooftop solar, credited directly to your account</p>
+    </div>
+    <div class="subsidy-grid">
+      <div class="subsidy-card">
+        <div class="kw">१ किलोवॅट सिस्टीम</div>
+        <div class="amt">₹30,000</div>
+        <div class="amt-label">सबसिडी रक्कम / Subsidy amount</div>
+      </div>
+      <div class="subsidy-card">
+        <div class="kw">२ किलोवॅट सिस्टीम</div>
+        <div class="amt">₹60,000</div>
+        <div class="amt-label">सबसिडी रक्कम / Subsidy amount</div>
+      </div>
+      <div class="subsidy-card">
+        <div class="kw">३ किलोवॅट सिस्टीम</div>
+        <div class="amt">₹78,000</div>
+        <div class="amt-label">सबसिडी रक्कम / Subsidy amount</div>
+      </div>
+    </div>
+    <div class="subsidy-note">
+      <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M12 8v5M12 16h.01" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <span>सरकारकडून सबसिडी उपलब्ध, नेट मीटरिंगची सोय व जास्त वीज विक्रीचा लाभ. आम्ही संपूर्ण कागदपत्रे व नेट मीटरिंग प्रक्रिया हाताळतो — तुम्हाला कुठलाही फॉर्म भरायची गरज नाही.</span>
+    </div>
+  </div>
+</section>
+
+<section id="products">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">अधिकृत विक्रेते</span>
+      <h2>Servotec चे अधिकृत डीलर</h2>
+      <p class="h2-en">Authorized Servotec smart power solutions dealer, Shevgaon</p>
+    </div>
+    <div class="perks-wrap">
+      <div class="perks-list">
+        <div class="perk-item">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div><div class="p-title">१००% लोन फॅसिलिटी</div><div class="p-sub">100% loan facility available</div></div>
+        </div>
+        <div class="perk-item">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div><div class="p-title">१००% प्रिमियम पॅनल आणि इन्व्हर्टर</div><div class="p-sub">Premium-grade panels and inverters only</div></div>
+        </div>
+        <div class="perk-item">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div><div class="p-title">२५+ वर्ष पॅनल वॉरंटी</div><div class="p-sub">25+ year panel performance warranty</div></div>
+        </div>
+        <div class="perk-item">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div><div class="p-title">गुंतवणुकीचा परतावा ३ ते ४ वर्षात</div><div class="p-sub">Return on investment within 3–4 years</div></div>
+        </div>
+        <div class="perk-item">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div><div class="p-title">फास्ट सर्व्हिस अँड अनुभवी इंजिनीअर</div><div class="p-sub">Fast service by experienced engineers</div></div>
+        </div>
+        <div class="perk-item">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div><div class="p-title">MSME द्वारा रजिस्टर्ड कंपनी</div><div class="p-sub">Registered under MSME</div></div>
+        </div>
+      </div>
+      <div class="brand-panel">
+        <div class="bp-head">
+          <div class="bp-logo">SERVOTEC</div>
+          <div>
+            <div style="font-weight:600; font-size:14.5px;">Smart Power Solutions</div>
+            <div class="bp-tag">आमचे प्राथमिक पॅनल व इन्व्हर्टर पार्टनर</div>
+          </div>
+        </div>
+        <p style="font-size:14px; color:var(--ink-soft); line-height:1.7;">आम्ही तुमच्या गरजेनुसार निवडक brands मधून सुद्धा सिस्टीम उभारून देतो, जेणेकरून बजेट व गुणवत्ता दोन्हीचा समतोल राखता येईल.</p>
+        <div class="chip-row">
+          <span class="chip">Adani Solar</span>
+          <span class="chip">Tata Power Solaroof</span>
+          <span class="chip">Waaree</span>
+          <span class="chip">UTL Solar</span>
+          <span class="chip">Premier Energies</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sample-section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">उदाहरण गणना</span>
+      <h2>५ किलोवॅट On-Grid सिस्टीमचे उदाहरण</h2>
+      <p class="h2-en">A real 5 kW rooftop example, calculated for a Shevgaon home</p>
+    </div>
+    <div class="sample-grid">
+      <div class="sample-card">
+        <h3>खर्च व परतावा / Cost &amp; payback</h3>
+        <div class="sample-row"><span class="label">सिस्टीम क्षमता / Capacity</span><span class="val">5 kW</span></div>
+        <div class="sample-row"><span class="label">एकूण प्रकल्प खर्च / Total cost</span><span class="val">₹2,50,000</span></div>
+        <div class="sample-row"><span class="label">कर व नेट मीटरिंग / Taxes &amp; net metering</span><span class="val">Inclusive</span></div>
+        <div class="sample-row"><span class="label">सरासरी टॅरिफ दर / Avg. tariff rate</span><span class="val">₹8/unit</span></div>
+        <div class="sample-row"><span class="label">वार्षिक उत्पादन / Annual generation</span><span class="val">6,870 kWh</span></div>
+        <div class="sample-row"><span class="label">वार्षिक बचत / Annual saving</span><span class="val">₹58,400</span></div>
+        <div class="sample-highlight">
+          <div class="num">4 Years</div>
+          <div class="lbl">गुंतवणूक परतावा कालावधी / Payback period</div>
+        </div>
+      </div>
+      <div class="sample-card">
+        <h3>मासिक वीज उत्पादन / Monthly generation</h3>
+        <div class="gen-bars">
+          <div class="gen-row"><span class="m">Jan</span><div class="gen-track"><div class="gen-fill" style="width:97%"></div></div><span class="v">580</span></div>
+          <div class="gen-row"><span class="m">Feb</span><div class="gen-track"><div class="gen-fill" style="width:94%"></div></div><span class="v">560</span></div>
+          <div class="gen-row"><span class="m">Mar</span><div class="gen-track"><div class="gen-fill" style="width:91%"></div></div><span class="v">540</span></div>
+          <div class="gen-row"><span class="m">Apr</span><div class="gen-track"><div class="gen-fill" style="width:92%"></div></div><span class="v">550</span></div>
+          <div class="gen-row"><span class="m">May</span><div class="gen-track"><div class="gen-fill" style="width:100%"></div></div><span class="v">595</span></div>
+          <div class="gen-row"><span class="m">Jun</span><div class="gen-track"><div class="gen-fill" style="width:97%"></div></div><span class="v">580</span></div>
+          <div class="gen-row"><span class="m">Jul</span><div class="gen-track"><div class="gen-fill" style="width:100%"></div></div><span class="v">595</span></div>
+          <div class="gen-row"><span class="m">Aug</span><div class="gen-track"><div class="gen-fill" style="width:97%"></div></div><span class="v">580</span></div>
+          <div class="gen-row"><span class="m">Sep</span><div class="gen-track"><div class="gen-fill" style="width:96%"></div></div><span class="v">570</span></div>
+          <div class="gen-row"><span class="m">Oct</span><div class="gen-track"><div class="gen-fill" style="width:92%"></div></div><span class="v">550</span></div>
+          <div class="gen-row"><span class="m">Nov</span><div class="gen-track"><div class="gen-fill" style="width:97%"></div></div><span class="v">580</span></div>
+          <div class="gen-row"><span class="m">Dec</span><div class="gen-track"><div class="gen-fill" style="width:99%"></div></div><span class="v">590</span></div>
+        </div>
+        <div class="env-row">
+          <div class="env-card"><div class="num">140 T</div><div class="lbl">CO₂ ऑफसेट / CO2 offset</div></div>
+          <div class="env-card"><div class="num">225</div><div class="lbl">समतुल्य झाडे / Equivalent trees</div></div>
+        </div>
+      </div>
+    </div>
+    <p style="font-size:12.5px; color:var(--ink-soft); margin-top:20px; max-width:70ch;">वरील आकडेवारी नमुना गणनेवर आधारित आहे. प्रत्यक्ष वीज उत्पादन जागेनुसार, सूर्यप्रकाशानुसार व वापरलेल्या उपकरणांनुसार बदलू शकते.</p>
+  </div>
+</section>
+
+<section id="process">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">प्रक्रिया</span>
+      <h2>चौकशीपासून सोलर सुरू होईपर्यंत</h2>
+      <p class="h2-en">From your first call to a live, generating system</p>
+    </div>
+    <div class="process">
+      <div class="step">
+        <div class="n">1</div>
+        <h3>चौकशी व साइट व्हिजिट</h3>
+        <div class="s-en">Enquiry &amp; site visit</div>
+        <p>तुमच्या छताची पाहणी व सरासरी वीज वापराचा अभ्यास.</p>
+      </div>
+      <div class="step">
+        <div class="n">2</div>
+        <h3>कोटेशन व डिझाइन</h3>
+        <div class="s-en">Quotation &amp; design</div>
+        <p>गरजेनुसार सिस्टीम क्षमता व खर्चाचा तपशीलवार प्रस्ताव.</p>
+      </div>
+      <div class="step">
+        <div class="n">3</div>
+        <h3>बुकिंग व मटेरियल</h3>
+        <div class="s-en">Booking &amp; material</div>
+        <p>१०% अ‍ॅडव्हान्स — मटेरियल पाठवण्याआधी ७०% पेमेंट.</p>
+      </div>
+      <div class="step">
+        <div class="n">4</div>
+        <h3>इन्स्टॉलेशन</h3>
+        <div class="s-en">Installation</div>
+        <p>अनुभवी इंजिनिअर्सद्वारे जलद व सुरक्षित बसवणी.</p>
+      </div>
+      <div class="step">
+        <div class="n">5</div>
+        <h3>नेट मीटरिंग व सबसिडी</h3>
+        <div class="s-en">Net metering &amp; activation</div>
+        <p>MahaVitran कागदपत्रे व सबसिडी आम्हीच हाताळतो.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact-section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">संपर्क साधा</span>
+      <h2>तुमच्या घरासाठी मोफत कोटेशन घ्या</h2>
+      <p class="h2-en">Get a free, no-obligation site estimate for your roof</p>
+    </div>
+    <div class="contact-grid">
+      <div>
+        <div class="team-list">
+          <div class="team-item">
+            <div><div class="team-name">इंजि. दिपक चोपडे</div><div class="team-role">Er. Dipak Chopde</div></div>
+            <a href="tel:+918080580820" class="team-phone">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1L6.6 10.8z" fill="currentColor"/></svg>
+              80805 80820
+            </a>
+          </div>
+          <div class="team-item">
+            <div><div class="team-name">मोहित पारसेरे</div><div class="team-role">Mohit Parsenre</div></div>
+            <a href="tel:+918999466201" class="team-phone">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1L6.6 10.8z" fill="currentColor"/></svg>
+              89994 66201
+            </a>
+          </div>
+          <div class="team-item">
+            <div><div class="team-name">यश राजपूत</div><div class="team-role">Yash Rajpoot</div></div>
+            <a href="tel:+917588023290" class="team-phone">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1L6.6 10.8z" fill="currentColor"/></svg>
+              75880 23290
+            </a>
+          </div>
+        </div>
+        <div class="addr-card">
+          <div class="a-title">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-6.1-7-11a7 7 0 1 1 14 0c0 4.9-7 11-7 11z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="10" r="2.4" stroke="currentColor" stroke-width="1.6"/></svg>
+            आमचे ठिकाण / Our address
+          </div>
+          <p>सूर्योदय सोलर सोल्युशन, शॉप नं. १४, मार्केट यार्ड, पाथर्डी रोड, शेवगाव, महाराष्ट्र<br>सामान्य चौकशी: 93701 20717</p>
+        </div>
+      </div>
+      <div class="cta-box">
+        <h3>WhatsApp वर लगेच संपर्क साधा</h3>
+        <p>तुमचे नाव, पत्ता व सरासरी मासिक वीज बिल पाठवा — आम्ही एका दिवसात मोफत कोटेशन पाठवू.</p>
+        <div class="hero-actions">
+          <a href="https://wa.me/919370120717?text=Namaskar%2C%20mala%20solar%20system%20sathi%20mofat%20quotation%20have%20aahe." class="btn-primary">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.4c1.4.8 3.1 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z" fill="currentColor"/></svg>
+            WhatsApp करा
+          </a>
+          <a href="tel:+919370120717" class="btn-secondary">कॉल करा</a>
+        </div>
+        <div class="hours">
+          <span>कामाचे तास</span>
+          <span>सोम–शनि, सकाळी ९ – सायं ७</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="brand-mr">सूर्योदय सोलर सोल्युशन</span>
+        <div class="brand-en">SURYODAY SOLAR SOLUTION</div>
+        <p>MahaVitran अधिकृत On-Grid सोलर विक्रेता व Servotec चे अधिकृत डीलर, शेवगाव, महाराष्ट्र.</p>
+      </div>
+      <div class="footer-col">
+        <h4>क्विक लिंक्स</h4>
+        <a href="#benefits">फायदे</a>
+        <a href="#subsidy">सबसिडी</a>
+        <a href="#products">उत्पादने</a>
+        <a href="#contact">संपर्क</a>
+      </div>
+      <div class="footer-col">
+        <h4>संपर्क</h4>
+        <a href="tel:+919370120717">93701 20717</a>
+        <a href="https://wa.me/919370120717">WhatsApp चॅट</a>
+        <span>शॉप नं. १४, मार्केट यार्ड, शेवगाव</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 सूर्योदय सोलर सोल्युशन. सर्व हक्क राखीव.</span>
+      <span>MSME नोंदणीकृत — Authorized Servotec &amp; MahaVitran dealer</span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/919370120717?text=Namaskar%2C%20mala%20solar%20system%20sathi%20mofat%20quotation%20have%20aahe." class="wa-float" aria-label="WhatsApp वर संपर्क करा">
+  <svg viewBox="0 0 24 24" fill="none"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.4c1.4.8 3.1 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z" fill="currentColor"/></svg>
+</a>
+
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const navLinks = document.getElementById('navLinks');
+  menuBtn.addEventListener('click', () => {
+    const open = navLinks.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', open);
+  });
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    menuBtn.setAttribute('aria-expanded', false);
+  }));
+</script>
+
+</body>
+</html>
